@@ -20,8 +20,8 @@ public class PokemonApi {
             JSONObject spritesObj = pokemonObj.getJSONObject("sprites");
             String imageURL = spritesObj.getString("front_default");
             p = new Pokemon(id, name, desc, imageURL);
-        } catch (JSONException e) {
-            Log.e("Error", "Error en generar pokemon");
+        } catch (Exception e) {
+            Log.e("Error", "Error en generar pokemon",e);
         }
         return p;
     }

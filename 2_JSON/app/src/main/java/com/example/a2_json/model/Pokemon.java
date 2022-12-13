@@ -1,5 +1,7 @@
 package com.example.a2_json.model;
 
+import androidx.annotation.NonNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +29,6 @@ public class Pokemon {
         this.desc = desc;
         this.imageURL = imageURL;
     }
-
-
 
     public int getId() {
         return id;
